@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "name": "Bob",
+        "hobbies": [
+            "hokey",
+            "traveling",
+            "diving"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "John",
+        "hobbies": [
+            "diving",
+            "traveling",
+            "hokey"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Matt",
+        "hobbies": [
+            "diving",
+            "traveling",
+            "hokey"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Kate"
+    }
+]
