@@ -112,7 +112,9 @@ class PersonHobbiesResource(PersonBase):
         body = json.loads(request.stream.read())
 
         self.validate_not_found(person)
-        self.validate_not_found(body['hobby'] in person['hobbies'])
+
+        if person.get('hobbies'):
+            self.validate_not_found(body.get('hobby') in person.get('hobbies'))
         self.validate_bad_request([body.get('hobby')])
 
         person['hobbies'].remove(body['hobby'])
