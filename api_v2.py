@@ -45,6 +45,7 @@ class PersonBase:
             'name': name,
         }
 
+
 class PersonResource(PersonBase):
     def on_get(self, request, response):
         persons = self.get_persons()
@@ -139,7 +140,6 @@ class PersonHobbiesResource(PersonBase):
         self.update_json(persons, person)
 
         response.body = json.dumps(person['hobbies'])
-
 
 
 api = falcon.API()
